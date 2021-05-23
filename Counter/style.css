@@ -1,0 +1,59 @@
+.count {
+  margin-left: 30rem;
+  margin-top: 10rem;
+  font-size: 4rem;
+  color: brown;
+}
+.num {
+  margin-left: 35rem;
+  margin-top: 1rem;
+  font-size: 4rem;
+  color: blueviolet;
+}
+.container2 {
+  margin-left: 24rem;
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+.container1 {
+  background-color: rgb(190, 231, 226);
+  border-radius: 1ch;
+  padding-bottom: 1ch;
+}
+
+#btn1 {
+  font-size: medium;
+  border-radius: 1ch;
+  font-weight: bold;
+  height: 4ch;
+  width: 12ch;
+  letter-spacing: 1pt;
+}
+#btn2 {
+  font-size: medium;
+  margin-left: 2pc;
+  margin-right: 2pc;
+  border-radius: 1ch;
+  font-weight: bold;
+  height: 4ch;
+  width: 10ch;
+  letter-spacing: 1pt;
+}
+#btn3 {
+  font-size: medium;
+  border-radius: 1ch;
+  font-weight: bold;
+  height: 4ch;
+  width: 12ch;
+  letter-spacing: 1pt;
+}
+
+#btn1:hover {
+  color: darkorange;
+}
+#btn2:hover {
+  color: rgb(17, 97, 202);
+}
+#btn3:hover {
+  color: darkorange;
+}
