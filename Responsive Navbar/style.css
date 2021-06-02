@@ -1,0 +1,103 @@
+nav {
+  background-color: greenyellow;
+  box-shadow: 10px 10px 20px rgba(154, 145, 236, 0.603);
+}
+h2 {
+  letter-spacing: 0.5vh;
+  margin-left: 5px;
+}
+span {
+  color: blue;
+  font-size: larger;
+}
+.nav-header {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: blue;
+  background: transparent;
+  border: transparent;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: darkolivegreen;
+  transform: rotate(90deg);
+}
+
+ul {
+  list-style-type: none;
+}
+.clickLinks a {
+  color: blue;
+  letter-spacing: 0.5vh;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+.clickLinks a:hover {
+  color: white;
+  font-size: larger;
+  background: black;
+}
+
+.clickLinks {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.showLinks {
+  height: 10rem;
+}
+
+/* .clickLinks li a {
+    float: left;
+    
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  } */
+/* .clickLinks li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: rgb(87, 86, 86);
+} */
+
+@media screen and (min-width: 800px) {
+  nav {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .clickLinks {
+    height: auto;
+    display: flex;
+    color: darkolivegreen;
+  }
+  .clickLinks a {
+    color: black;
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .clickLinks a:hover {
+    color: blue;
+    font-weight: bolder;
+    background: transparent;
+  }
+}
