@@ -1,5 +1,5 @@
 const navToggle = document.querySelector(".nav-toggle");
-const links = document.querySelector(".clickLinks");
+const clickLinks = document.querySelector(".clickLinks");
 
 navToggle.addEventListener("click", function () {
     // console.log(links.classList);
@@ -10,5 +10,5 @@ navToggle.addEventListener("click", function () {
     // } else {
     //   links.classList.add("show-links");
     // }
-    links.classList.toggle("showLinks");
+    clickLinks.classList.toggle("showLinks");
   });

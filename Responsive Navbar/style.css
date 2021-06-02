@@ -10,10 +10,11 @@ span {
   color: blue;
   font-size: larger;
 }
+ul {
+    list-style-type: none;
+  }
 .nav-header {
   display: flex;
-  padding: 1rem;
-  align-items: center;
   justify-content: space-between;
 }
 .nav-toggle {
@@ -29,9 +30,12 @@ span {
   transform: rotate(90deg);
 }
 
-ul {
-  list-style-type: none;
-}
+
+.clickLinks {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
 .clickLinks a {
   color: blue;
   letter-spacing: 0.5vh;
@@ -46,48 +50,27 @@ ul {
   background: black;
 }
 
-.clickLinks {
-  height: 0;
-  overflow: hidden;
-  transition: all 0.3s linear;
-}
+
 .showLinks {
   height: 10rem;
 }
 
-/* .clickLinks li a {
-    float: left;
-    
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  } */
-/* .clickLinks li a{
-    text-decoration: none;
-    padding: 1rem;
-    color: rgb(87, 86, 86);
-} */
 
 @media screen and (min-width: 800px) {
   nav {
-    max-width: 1170px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
   }
-  .nav-header {
+  /* .nav-header {
     padding: 0;
-  }
+  } */
   .nav-toggle {
     display: none;
   }
   .clickLinks {
-    height: auto;
     display: flex;
+    height: auto;
     color: darkolivegreen;
   }
   .clickLinks a {
