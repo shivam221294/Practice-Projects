@@ -1,0 +1,90 @@
+/* ---------
+Imp things to learn:
+---------
+position: fixed;
+transform: translate(-100%);
+transform: translate(0);
+grid-template-rows: auto 40fr;
+--------- */
+
+
+
+body{
+    background: rgb(209, 242, 248);
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(250, 248, 231);
+  display: grid;
+  grid-template-rows: auto 5fr;
+  row-gap: 3rem;
+  box-shadow:2px 2px 20px rgb(228, 176, 176);
+  transition: all 0.3s linear;
+  transform: translate(-100%);
+  grid-template-rows: auto 40fr;
+}
+.sidebar-toggle {
+  font-size: 1.8rem;
+  background-color: transparent;
+  color: teal;
+  border: none;
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  cursor: pointer;
+}
+.sidebar-toggle:hover {
+  transition: all 0.3s linear;
+  font-size: 2rem;
+  color: rgb(137, 197, 197);
+}
+.sidebar-header {
+  display: flex;
+  padding: 0rem 2rem;
+  justify-content: space-between;
+}
+h2 {
+  letter-spacing: 0.5vh;
+  background-color: transparent;
+  text-shadow: 2px 2px rgba(134, 184, 111, 0.603);
+}
+.close-btn {
+  border: none;
+  background-color: transparent;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.close-btn:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s linear;
+}
+ul {
+  list-style-type: none;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 0rem;
+  display: block;
+  letter-spacing: 0.5vh;
+  color: teal;
+  text-shadow: 2px 2px rgb(146, 223, 223);
+}
+.links a:hover {
+  color: red;
+  background-color: rgb(218, 242, 247);;
+}
+.show-sidebar {
+    transform: translate(0);
+  }
+@media screen and (min-width: 600px) {
+  .sidebar {
+    width: 350px;
+  }
+}
