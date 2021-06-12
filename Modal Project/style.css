@@ -1,0 +1,73 @@
+.modal-container {
+  background: url("./background-1.jpg") center/cover;
+  height: 97vh;
+  display: grid;
+  place-items: center;
+}
+img {
+  display: block;
+}
+.modal-header {
+  width: 420px;
+  background: white;
+  padding: 0rem 0rem 3rem 0rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 20px rgb(15, 144, 219);
+}
+.modal-header h2 {
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0rem 0rem 3rem 0rem;
+  text-shadow: 2px 3px 2px rgb(15, 144, 219);
+}
+.open-btn {
+  font-weight: bold;
+  border-radius: 0.3rem;
+  background-color: rgb(107, 190, 238);
+  box-shadow: 1px 1px 10px rgb(15, 144, 219);
+  padding: 0.5rem;
+}
+.modal-content {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 166, 233, 0.5);
+  visibility: hidden;
+  z-index: -10;
+}
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+.content-header {
+  width: 420px;
+  height: 35vh;
+  background: white;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 20px rgb(15, 144, 219);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.content-header h2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: red;
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+.close-btn:hover {
+  transform: scale(1.3);
+}
