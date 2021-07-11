@@ -1,6 +1,6 @@
 //using selectors inside the element
 const questions = document.querySelectorAll(".question");
-console.log(questions);
+// console.log(questions);
 
 questions.forEach(function (question) {
   const btn = question.querySelector(".question-btn");
@@ -10,7 +10,7 @@ questions.forEach(function (question) {
     // console.log(question);
 
     questions.forEach(function (item) {
-        console.log(item);
+      // console.log(item);
       if (item !== question) {
         item.classList.remove("show-text");
       }
